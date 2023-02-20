@@ -39,26 +39,42 @@ Done.
 4. Display the content of the script (using a command, not from an editor) ```echo -e "Script running please wait ...\nDone."```
 5. Run the script ```source script_1.sh```
 
-## Exercise 4: Accessing or modifying a file : permissions and root privilege
+### Exercise 4: Accessing or modifying a file : permissions and root privilege
 
-### Exercise 4:.1 Change the rights for accessing or modifying a file
-1. Create a file credentials in the folder linux_ex_1
-    (a) Write any kind of (fake) personal information within the file
-    (b) Display the file content
-    (c) Display the current permissions
-2. Change the current permissions to : read only for all users
-    (a) Display the new permissions
+#### 1 Change the rights for accessing or modifying a file
+1. Create a file credentials in the folder linux_ex_1 ```vim credentials.sh```
+    (a) Write any kind of (fake) personal information within the file       ```i```
+    ```Bonjour je m'appelle Mateo```
+    ```:wq```
+    (b) Display the file content ```. credentials.sh```
+    (c) Display the current permissions```ls -l credentials.sh ```
+2. Change the current permissions to : read only for all users ```chmod 444 credentials.sh```
+    (a) Display the new permissions```ls -l credentials.sh```
+    (b) Modify and save the file : On ne peut pas, il faut rajouter un          “!” pour override
+    (c) Display the file content```. credentials.sh```
+3. Change the permissions back to read and write for all users```chmod ugo+rw credentials.sh```
+    (a) Display the new permissions```ls -l credentials.sh```
     (b) Modify and save the file
-    (c) Display the file content
-3. Change the permissions back to read and write for all users
-    (a) Display the new permissions
-    (b) Modify and save the file
-    (c) Display the file content
+    ```vim credentials.sh```
+    ```J'ai 10 ans```
+    ```:wq```
+    (c) Display the file content ```. credentials.sh```
 
 On the same file :
-1. Add the execute permission to the owner
-    (a) Display the new permissions
-2. Remove the read permission to other users
-    (a) Display the new permissions
-3. Change the permissions to read, write and execute for all users
-    (a) Display the new permissions
+1. Add the execute permission to the owner ```chmod u+x credentials.sh```
+    (a) Display the new permissions ```ls -l credentials.sh```
+    Output :
+    -rwxrw-rw- 1 mateo_grandemange mateo_grandemange 72 Feb 20 14:12         credentials.sh
+2. Remove the read permission to other users 
+    ```chmod o-r credentials.sh```
+    (a) Display the new permissions ```ls -l credentials.sh```
+    Output:
+    -rwxrw--w- 1 mateo_grandemange mateo_grandemange 72 Feb 20 14:12         credentials.sh
+
+3. Change the permissions to read, write and execute for all users 
+    ```chmod a+rwx credentials.sh```
+    (a) Display the new permissions```ls -l credentials.sh```
+    Output:
+    -rwxrwxrwx 1 mateo_grandemange mateo_grandemange 72 Feb 20 14:12         credentials.sh
+    
+ 
