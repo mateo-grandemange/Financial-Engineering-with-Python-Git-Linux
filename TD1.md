@@ -93,4 +93,32 @@ On the same file :
     Output:
     -rwxrwxrwx 1 mateo_grandemange mateo_grandemange 72 Feb 20 14:12 credentials.sh
     
+#### 2 Access root files
+1. Go to the root folder
+
+2. Create a file in root user mode named .private_file
+
+    (a) Write some information in the file
+
+    (b) Display the file content
+
+    (c) Display all the files in the folder including hidden files
+
+3. Modify the file in normal user mode
+
+    (a) Write some new information in the file
+
+    (b) Display the file content
+
+4. Modify the file in root user mode
+
+    (a) Write some new information in the file
+
+    (b) Display the file content
+
+5. Change permissions to read, write and execute for all users
+
+    (a) Modify the file content in normal user mode
+
+    (b) Display the file content
  
