@@ -38,3 +38,27 @@ Done.
 3. Quit editing and save the script ```:wq```
 4. Display the content of the script (using a command, not from an editor) ```echo -e "Script running please wait ...\nDone."```
 5. Run the script ```source script_1.sh```
+
+## Exercise 4: Accessing or modifying a file : permissions and root privilege
+
+### Exercise 4:.1 Change the rights for accessing or modifying a file
+1. Create a file credentials in the folder linux_ex_1
+    (a) Write any kind of (fake) personal information within the file
+    (b) Display the file content
+    (c) Display the current permissions
+2. Change the current permissions to : read only for all users
+    (a) Display the new permissions
+    (b) Modify and save the file
+    (c) Display the file content
+3. Change the permissions back to read and write for all users
+    (a) Display the new permissions
+    (b) Modify and save the file
+    (c) Display the file content
+
+On the same file :
+1. Add the execute permission to the owner
+    (a) Display the new permissions
+2. Remove the read permission to other users
+    (a) Display the new permissions
+3. Change the permissions to read, write and execute for all users
+    (a) Display the new permissions
