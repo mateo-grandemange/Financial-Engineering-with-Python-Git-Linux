@@ -24,15 +24,17 @@
 5. Create an empty text file named [first_name]_[last_name].txt (e.g. alexis_bogroff.txt): ```vim mateo_g.txt```
 6. Create a folder notes: ```mkdir notes```
 7. Move your text file into this folder: ```mv mateo_g.txt notes/```
-8. Rename the text file by appending the current year [first_name]_[last_name]_[current_year].txt :
+8. Rename the text file by appending the current year [first_name]_[last_name]_[current_year].txt : mv mateo_g.txt mateo_g_2023.txt
 9. Make a copy of this folder, name it notes_2022: ```cp -r notes/ notes_2022```
 10. Delete the first folder (notes) using the verbose option: ```rm -rv notes```
 
 ### Exercise 3: Create and run a script
-1. Create a script script_1.sh in the folder linux_ex_1 
+1. Create a script script_1.sh in the folder linux_ex_1 ```vim script_1.sh```
 2. In the script, write the commands that would output the following :
 Script running please wait ...
 Done.
-3. Quit editing and save the script
-4. Display the content of the script (using a command, not from an editor)
-5. Run the script
+```echo "Script running please wait ..."
+echo "Done."```
+3. Quit editing and save the script ```:wq```
+4. Display the content of the script (using a command, not from an editor) ```echo -e "Script running please wait ...\nDone."```
+5. Run the script ```source script_1.sh```
