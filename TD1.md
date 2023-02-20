@@ -43,6 +43,7 @@ Done.
 
 #### 1 Change the rights for accessing or modifying a file
 1. Create a file credentials in the folder linux_ex_1 ```vim credentials.sh```
+2. 
     (a) Write any kind of (fake) personal information within the file       
     ```i```
     ```Bonjour je m'appelle Mateo```
@@ -73,19 +74,23 @@ Done.
 
 On the same file :
 1. Add the execute permission to the owner ```chmod u+x credentials.sh```
+
     (a) Display the new permissions ```ls -l credentials.sh```
     Output :
-    -rwxrw-rw- 1 mateo_grandemange mateo_grandemange 72 Feb 20 14:12         credentials.sh
+    -rwxrw-rw- 1 mateo_grandemange mateo_grandemange 72 Feb 20 14:12 credentials.sh
+    
 2. Remove the read permission to other users 
     ```chmod o-r credentials.sh```
+    
     (a) Display the new permissions ```ls -l credentials.sh```
     Output:
-    -rwxrw--w- 1 mateo_grandemange mateo_grandemange 72 Feb 20 14:12         credentials.sh
+    -rwxrw--w- 1 mateo_grandemange mateo_grandemange 72 Feb 20 14:12 credentials.sh
 
 3. Change the permissions to read, write and execute for all users 
     ```chmod a+rwx credentials.sh```
+    
     (a) Display the new permissions```ls -l credentials.sh```
     Output:
-    -rwxrwxrwx 1 mateo_grandemange mateo_grandemange 72 Feb 20 14:12         credentials.sh
+    -rwxrwxrwx 1 mateo_grandemange mateo_grandemange 72 Feb 20 14:12 credentials.sh
     
  
