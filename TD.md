@@ -4,6 +4,7 @@
 
 ### Exercise 1: Move around
 1. Go to the root directory: “cd /”.
+```cd /```
 2. Display the content of the current (root) directory: “ls /”.
 3. Check your current location: “pwd”.
 4. Try to create a directory named test: “sudo mkdir test” parce que sans le “sudo”, on n’a pas la permission.
