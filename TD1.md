@@ -28,4 +28,11 @@
 9. Make a copy of this folder, name it notes_2022: ```cp -r notes/ notes_2022```
 10. Delete the first folder (notes) using the verbose option: ```rm -rv notes```
 
-
+### Exercise 3: Create and run a script
+1. Create a script script_1.sh in the folder linux_ex_1 
+2. In the script, write the commands that would output the following :
+Script running please wait ...
+Done.
+3. Quit editing and save the script
+4. Display the content of the script (using a command, not from an editor)
+5. Run the script
