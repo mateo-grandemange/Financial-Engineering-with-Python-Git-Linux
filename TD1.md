@@ -94,9 +94,9 @@ On the same file :
     -rwxrwxrwx 1 mateo_grandemange mateo_grandemange 72 Feb 20 14:12 credentials.sh
     
 #### 2 Access root files
-1. Go to the root folder
+1. Go to the root folder ```cd /```
 
-2. Create a file in root user mode named .private_file
+2. Create a file in root user mode named .private_file  ```sudo touch .private_file```
 
     (a) Write some information in the file
 
