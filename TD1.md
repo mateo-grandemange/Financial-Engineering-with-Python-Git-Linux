@@ -33,8 +33,8 @@
 2. In the script, write the commands that would output the following :
 Script running please wait ...
 Done.
-```echo "Script running please wait ..."
-echo "Done."```
+```echo "Script running please wait ..."```
+```echo "Done."```
 3. Quit editing and save the script ```:wq```
 4. Display the content of the script (using a command, not from an editor) ```echo -e "Script running please wait ...\nDone."```
 5. Run the script ```source script_1.sh```
